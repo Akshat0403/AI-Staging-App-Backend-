@@ -9,7 +9,7 @@ app.use(express.json({ limit: "15mb" }));
 
 // Verify key
 if (!process.env.REPLICATE_API_KEY) {
-  console.error("❌ Missing REPLICATE_API_KEY in .env");
+  console.error("❌ Missing REPLICATE_API_KEY in .envs");
   process.exit(1);
 }
 
